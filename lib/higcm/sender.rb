@@ -67,7 +67,7 @@ module HiGCM
           :headers         => headers,
           :method          => :post,
           :body            => body.to_json,
-          :follow_location => true
+          :followlocation  => true
         )
 
         @hydra ||= Typhoeus::Hydra.new

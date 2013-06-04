@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
 
-  s.add_runtime_dependency 'typhoeus', ['~> 0.3.3']
+  s.add_runtime_dependency 'typhoeus', [">= 0.5"]
   s.add_development_dependency 'rspec', ["~> 2.6"]
   s.add_development_dependency 'json', [">= 0"]
   s.add_development_dependency 'rake', [">= 0"]
