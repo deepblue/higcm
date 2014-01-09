@@ -23,7 +23,7 @@ module HiGCM
         handler = HiGCM::Handler.new if handler.nil?
         request = send_async(registration_ids, opts, handler)
         send_async_run
-        request.handled_response
+        request
       end
 
       #http://developer.android.com/guide/google/gcm/gcm.html#server
