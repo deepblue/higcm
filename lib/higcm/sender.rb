@@ -63,7 +63,7 @@ module HiGCM
         end
 
         request = Typhoeus::Request.new(
-          'https://android.googleapis.com/gcm/send',
+          'https://fcm.googleapis.com/fcm/send',
           :headers         => headers,
           :method          => :post,
           :body            => body.to_json,
