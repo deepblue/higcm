@@ -15,7 +15,7 @@ describe HiGCM::Sender do
     )
     @sender = HiGCM::Sender.new(@api_key)
     @sender.hydra = Typhoeus::Hydra.new
-    @sender.hydra.stub(:post, 'https://android.googleapis.com/gcm/send').and_return(@stub_gcm_response)
+    @sender.hydra.stub(:post, 'https://fcm.googleapis.com/fcm/send').and_return(@stub_gcm_response)
   end
 
   describe "#initialize" do

@@ -28,7 +28,7 @@ describe HiGCM::Handler do
       @api_key     = 'foo'
       sender       = HiGCM::Sender.new(@api_key)
       sender.hydra = Typhoeus::Hydra.hydra
-      sender.hydra.stub(:post, 'https://android.googleapis.com/gcm/send').and_return(@stub_gcm_response)
+      sender.hydra.stub(:post, 'https://fcm.googleapis.com/fcm/send').and_return(@stub_gcm_response)
 
       _fails   = 0
       _success = 0
